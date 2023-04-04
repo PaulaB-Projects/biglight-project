@@ -1,0 +1,55 @@
+$black: #040107;
+$color: #262626;
+$white: #ffff;
+$banner-font: 1.3rem;
+
+body {
+	color: $black;
+}
+.section.white-section {
+	color: $color;
+	background-color: $white;
+}
+
+@mixin product-container {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,.7);
+	display: flex;
+	margin-bottom: 40px;
+	max-width: calc(50% - 40px);
+	-webkit-box-flex: 1;
+	flex: 1 0 calc(50% - 40%);
+}
+
+.products-list .product-card {
+	@include product-container;
+}
+
+@mixin promo-banner {
+	background-color: $black;
+	color: $white;
+}
+
+.promo p {
+	@include promo-banner;
+	font-size: $banner-font;
+}
+
+
+// @mixin inline-block {
+// 	display: inline-block;
+// 	vertical-align: top;
+// }
+
+// ul {
+// 	@include inline-block;
+// }
+
+// li {
+// 	@include inline-block;
+// }
+
+// retriving a variable saas way is slightly diffrent
+//sass is super set of CSS - 
+//what's nice about SASS variables - because it's just a file that gets transpiled into a regular CSS file the variables just get written into the CSS file
+// as a raw value, the browser insn't then taking that and generating a variable in memory, it's just sees that as a regular css property. The browser can only interpret that as something that's dynamic and it's going to act acordingly
+//

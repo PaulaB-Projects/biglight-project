@@ -1,0 +1,22 @@
+body {
+  color: #040107;
+}
+
+.section.white-section {
+  color: #262626;
+  background-color: white;
+}
+
+.products-list .product-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  display: flex;
+  margin-bottom: 40px;
+  max-width: calc(50% - 40px);
+  flex: 1 0 10%;
+}
+
+.promo p {
+  background-color: #040107;
+  color: white;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=style.css.map */
