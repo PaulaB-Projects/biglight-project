@@ -30,6 +30,7 @@ img {
 @mixin promo-banner {
 	background-color: $black;
 	color: $white;
+	margin-bottom: 30px;
 }
 
 .promo p {
